@@ -1,0 +1,458 @@
+body {
+  margin: 0;
+  font-family: Bai Jamjuree, sans-serif;
+}
+
+header {
+  height: 300px;
+  width: 100%;
+  background-image: url("images/bg-header-desktop.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.header-div p {
+  color: rgb(192, 190, 190);
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  max-width: 736px;
+  height: 50px;
+  margin-top: 0px;
+  line-height: 1.4;
+}
+
+.header-div h1 {
+  color: rgb(76, 84, 93);
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 19px;
+  margin-top: 0;
+}
+
+.header-div {
+  text-align: center;
+}
+
+.two-buttons {
+  width: 100%;
+  max-width: 500px; /* Sets a maximum width for larger screens */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto; /* Centers the container horizontally */
+  padding: 0 10px; /* Adds some padding for small screens */
+}
+
+.two-buttons .IOS {
+  width: 240px;
+  height: 35px;
+  background-color: rgb(44, 203, 199);
+  text-align: center;
+  padding-top: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border-radius: 25px;
+  box-shadow: rgba(44, 203, 199) 0px 2px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.two-buttons .Mac {
+  width: 240px;
+  height: 35px;
+  background-color: rgb(97, 115, 255);
+  text-align: center;
+  padding-top: 14px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  border-radius: 25px;
+  box-shadow: rgb(97, 115, 255) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.section p {
+  color: rgb(192, 190, 190);
+  font-size: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  display: inline-block;
+  max-width: 800px;
+  width: 80%;
+  max-height: 50px;
+  height: 100%;
+  margin-top: 0px;
+  line-height: 1.5;
+}
+
+.section h3 {
+  color: rgb(76, 84, 93);
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 19px;
+  margin-top: 200px;
+}
+
+.section {
+  text-align: center;
+}
+
+#computer img {
+  max-width: 845px;
+  max-height: 621px;
+  width: 98%; /* This allows the image to scale responsively */
+  height: auto; /* Maintain aspect ratio */
+  min-width: 400px; /* Prevent the image from shrinking below this width */
+  min-height: 300px; /* Prevent the image from shrinking below this height */
+  object-fit: contain; /* Keeps the image within its box, preserving the aspect ratio */
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin-top: 120px;
+  display: grid;
+  grid-template-areas:
+    "computer computer Quick Quick"
+    "computer computer iCloud iCloud"
+    "computer computer Complete Complete"
+    "computer computer a a";
+  column-gap: 75px;
+  row-gap: 25px;
+}
+
+.container h3 {
+  font-size: 25px;
+  color: rgb(76, 84, 93);
+  margin-bottom: 15px;
+  margin-top: 45px;
+}
+.container p {
+  color: rgb(192, 190, 190);
+  line-height: 1.8;
+  margin: 0;
+}
+
+#computer {
+  grid-area: computer;
+}
+
+#Quick {
+  grid-area: Quick;
+  font-size: 18px;
+  width: 52%;
+}
+
+#iCloud {
+  grid-area: iCloud;
+  font-size: 18px;
+  width: 50%;
+}
+
+#Complete {
+  grid-area: Complete;
+  font-size: 18px;
+  width: 50%;
+}
+
+.section img {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  margin-top: 130px;
+}
+
+.blacklist {
+  height: 100%;
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Make items wrap on smaller screens */
+}
+
+.blacklist div {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+  height: 260px;
+  width: 100%; /* Adjust width to allow wrapping */
+  max-width: 300px; /* Set a max width to control size */
+  flex: 1; /* Allow flexible width */
+}
+.blacklist div h3 {
+  color: rgb(76, 84, 93);
+  font-size: 24px;
+}
+
+.blacklist div p {
+  color: rgb(192, 190, 190);
+  width: 100%; /* Use the full width of the div */
+  max-width: 360px; /* Set a max width */
+  font-size: 17px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.logo {
+  height: 100%;
+  width: 100%;
+  max-width: 1340px;
+  margin: 100px auto 10px auto; /* Center the logo section */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5%; /* Add padding instead of fixed margins */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.clipboard {
+  color: rgb(76, 84, 93);
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.clipboard p {
+  color: rgb(192, 190, 190);
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  display: inline-block;
+  max-width: 736px;
+  width: 100%;
+  height: 50px;
+  margin-top: 0px;
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 100px;
+  height: 130px;
+  width: 100%;
+  background-color: rgb(249, 248, 248);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: rgb(146, 144, 144);
+  font-size: 17px;
+  font-weight: 500;
+}
+
+footer .FAQs-div {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .Kit {
+  max-width: 184px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logos {
+  max-width: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1650px) {
+  #computer {
+    grid-area: computer;
+  }
+  #Quick,
+  #iCloud,
+  #Complete {
+    text-align: left; /* Optional: Align text */
+    min-width: 200px; /* Prevents the containers from shrinking too much */
+    padding: 10px; /* Adds padding inside the boxes */
+  }
+}
+
+@media only screen and (max-width: 1458px) {
+  .logo {
+    padding-top: 100px;
+    justify-content: center; /* Centers the logos horizontally */
+    align-items: center; /* Vertically centers the logos */
+    max-width: 900px; /* Set a maximum width for the container */
+    margin: 0 auto; /* Centers the whole container */
+  }
+
+  .logo div {
+    flex: 1 1 30%;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .logo div:nth-child(4),
+  .logo div:nth-child(5) {
+    padding-top: 50px;
+    flex-basis: 40%; /* Bottom logos take up 40% of the width */
+    justify-content: center; /* Centers the bottom logos */
+  }
+
+  .logo img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 1433px) {
+  .container {
+    grid-template-areas:
+      "computer"
+      " Quick"
+      " iCloud"
+      "Complete";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #Quick,
+  #iCloud,
+  #Complete {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 973px) {
+  .logo {
+    max-width: 800px;
+    width: 90%;
+  }
+  .logo div:nth-child(5) {
+    padding-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 973px) {
+  .blacklist div {
+    flex: 1 1 40%;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 778px) {
+  .logo div {
+    flex: 1 1 40%;
+  }
+
+  .logo div:nth-child(5) {
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  header img {
+    height: 64%;
+  }
+  .header-div h1 {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .header-div p {
+    width: 80%;
+  }
+
+  .two-buttons {
+    flex-direction: column;
+    margin: 10px 14%; /* Adds margin for spacing */
+  }
+  .two-buttons .IOS {
+    width: 80%;
+    height: 50px;
+    font-size: 22px;
+  }
+  .two-buttons .Mac {
+    width: 80%;
+    height: 50px;
+    font-size: 22px;
+  }
+  .section h3 {
+    font-size: 48px;
+  }
+
+  .section p {
+    width: 93.5%;
+    word-spacing: 2px;
+    font-size: 28px;
+  }
+
+  .blacklist {
+    margin-top: 80px;
+    flex-direction: column;
+    padding: 0 2%;
+  }
+
+  .blacklist div {
+    max-width: 100%; /* Take full width on smaller screens */
+  }
+
+  .logo {
+    flex-direction: column; /* Stack logo items vertically */
+    /* margin: 50px auto; Adjust margin */
+    justify-content: center;
+    align-items: center;
+  }
+  .logo div {
+    margin: 50px 0;
+  }
+
+  .clipboard p {
+    width: 60%;
+    margin-bottom: 70px;
+  }
+
+  footer {
+    margin-top: 70px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer img {
+    margin: 50px 0;
+  }
+  footer .FAQs-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .Kit {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+  }
+  footer .footer-logos {
+    margin-top: 50px;
+  }
+}
