@@ -7,7 +7,7 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
 
-- Live Site URL: [Add live site URL here](https://alikssant.github.io/Landing-page/)
+- Live Site URL: [Clipboard-demo](https://alikssant.github.io/Landing-page/)
 
 
 
