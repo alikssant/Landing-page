@@ -20,5 +20,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Abatov](https://www.your-site.com)
+- Website - [Currently not available](https://www.your-site.com)
 - Frontend Mentor - [@alikssant](https://www.frontendmentor.io/profile/alikssant)
